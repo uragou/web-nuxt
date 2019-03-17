@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <transition name="page" mode="out-in"><keep-alive>
+    <transition name="page" mode="out-in">
     <router-view></router-view>  
-    </keep-alive></transition>
+    </transition>
   </div>
 </template>
 

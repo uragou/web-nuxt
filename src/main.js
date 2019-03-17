@@ -23,7 +23,7 @@ const router = new Router({
 new Vue({
   router,
   render: h => h(Head),
-}).$mount('#head')
+}).$mount('#Vhead')
 
 new Vue({
   router,
