@@ -1,10 +1,10 @@
 <template>
-  <div id="head">
+  <div id="head" v-bind:class= "{actmenu:hum}">
       <img id="humberger" @click = "hum = !hum" src="./assets/humberger.png">
-      <transition name="Vmenu"><ul v-show = "hum">
+      <ul v-show = "hum" >
         <router-link class = "menu" name = "home" tag="li" to="/"><a>home</a></router-link>
         <router-link class = "menu" name = "contact" tag="li" to="/contact"><a>contact</a></router-link>
-      </ul></transition>
+      </ul>
   </div>
 </template>
 
@@ -37,6 +37,7 @@ export default {
 ul{
   position: relative;
   list-style-type: none;
+  text-align: center;
   padding: 0px;
 }
 .menu{
@@ -44,16 +45,16 @@ ul{
   padding: 20px;
 }
 
+.actmenu{
+  background-color: blueviolet;
+  width: 20%;
+  height: 100%;
+
+}
+
 #humberger{
   margin: 10px;
 }
 
-.Vmenu-enter-active,.Vmenu-leave-active {
-  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-}
-.Vmenu-enter, .Vmenu-leave-to{
-  transform: translateX(10px);
-  opacity: 0;
-}
 
 </style>
