@@ -26,13 +26,14 @@ export default {
 }
 
 .page-enter-active {
-  transition: all .3s ease;
+  transition: all .8s;
+  opacity: 1;
 }
 .page-leave-active {
-  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  transition: all .8s;
+  opacity: 1;
 }
 .page-enter, .page-leave-to{
-  transform: translateX(10px);
   opacity: 0;
 }
 
