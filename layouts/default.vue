@@ -1,8 +1,22 @@
 <template>
-  <div>
-    <nuxt />
+  <div id="app">
+    <humber/>
+    <transition name="page" mode="out-in">
+      <nuxt/> 
+    </transition>
   </div>
 </template>
+
+<script>
+import Humber from '~/components/Humber.vue'
+
+export default {
+  components:{
+    Humber
+  }
+}
+</script>
+
 
 <style>
 html {
@@ -15,6 +29,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  text-align: center;
 }
 
 *,
@@ -51,5 +66,17 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+.page-enter-active {
+  transition: all .8s;
+  opacity: 1;
+}
+.page-leave-active {
+  transition: all .8s;
+  opacity: 1;
+}
+.page-enter, .page-leave-to{
+  opacity: 0;
 }
 </style>
