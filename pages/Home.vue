@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class= "maindis">
-      <img id = "logo" src="../assets/Flogo.png"/>
+      <img id = "logo" src="@/assets/Flogo.png"/>
     </div>
     <div class= "cont">
       <h2>こんにちは！浦郷の勉強用Vue.jsだよ！</h2>
