@@ -3,7 +3,7 @@
   "description": "浦郷がnuxtの勉強をしている",
   "scripts": {
     "dev": "nuxt",
-    "lint": "eslint .",
+    "lint": "eslint ./index.js",
     "serve": "firebase serve --only functions",
     "shell": "firebase functions:shell",
     "start": "npm run shell",
@@ -18,7 +18,7 @@
     "nuxt": "^2.6.2"
   },
   "devDependencies": {
-    "eslint": "^5.12.0",
+    "eslint": "^5.16.0",
     "eslint-plugin-promise": "^4.0.1"
   },
   "private": true

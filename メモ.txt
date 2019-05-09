@@ -3,3 +3,7 @@ firebase.jsonの
 を
 "npm --prefix \"%RESOURCE_DIR%\" run lint"
 にしないとんnpm run deploy時にエラー
+
+Function URL (helloWorld): https://us-central1-uragou-web.cloudfunctions.net/helloWorld+  
+
+Function URL (addMessage): https://us-central1-uragou-web.cloudfunctions.net/addMessage
