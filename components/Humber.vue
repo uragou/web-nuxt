@@ -1,7 +1,7 @@
 <template>
   <div id="head">
     <div id="humberger"  @click = "hum = !hum">ー<br>ー<br>ー</div>
-    <transition name= "amenu" mode="out-in">
+    <transition name= "amenu">
       <div id="acthead" v-if= "hum" key= "act">
         <ul id = "actmenu">
           <nuxt-link class = "menu" name = "home" tag="li" to="/"><a>home</a></nuxt-link>
@@ -76,11 +76,12 @@ ul{
 
 .amenu-enter-active{
   transition-property: all;
-  transition-duration: 0.6s;
+  transition-duration: .6s;
   transition-timing-function: linear;
 }
 .amenu-leave-active{
-  transition: opacity .5s;
+  transition-duration: .5s;
+  opacity: 1;
 }
 
 .amenu-enter{

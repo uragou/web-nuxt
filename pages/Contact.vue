@@ -4,6 +4,10 @@
       <p>twitter : <a href="https://twitter.com/uragouR" target="_blank">@uragouR</a></p>
       <p>はてなブログ : <a href="https://uragou.hatenablog.com/" target="_blank">ステーキの戯言</a></p>
       <button @click= "limited">有限なボタン</button>
+
+      <div id = mail>
+        お問い合わせしたい方はこちらからどうぞ！
+      </div>
     </div>
 </template>
 

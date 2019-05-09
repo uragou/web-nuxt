@@ -69,14 +69,22 @@ html {
 }
 
 .page-enter-active {
-  transition: all .8s;
+  transition: all 22s;
   opacity: 1;
 }
 .page-leave-active {
-  transition: all .8s;
+  transition-property: all;
+  transition-duration: 8s;
   opacity: 1;
 }
-.page-enter, .page-leave-to{
+
+.page-enter{
+  opacity: 0;
+}
+.page-leave{
+  opacity: 1;
+}
+.page-leave-to{
   opacity: 0;
 }
 </style>

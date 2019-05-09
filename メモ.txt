@@ -1,0 +1,5 @@
+firebase.jsonの
+"npm --prefix \"$RESOURCE_DIR\" run lint"
+を
+"npm --prefix \"%RESOURCE_DIR%\" run lint"
+にしないとんnpm run deploy時にエラー
